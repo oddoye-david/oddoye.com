@@ -1,0 +1,13 @@
+{
+  "name": "roots-oddoye",
+  "description": "oddoyedotcom",
+  "dependencies": {
+    "coffee-script": "1.9.x",
+    "jade": "1.9.x",
+    "marked": "0.3.x",
+    "roots": "3.0.x",
+    "roots-contentful": "0.0.7",
+    "rupture": "0.6.x",
+    "ship": "0.2.x"
+  }
+}
