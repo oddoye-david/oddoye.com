@@ -1,13 +1,30 @@
 {
-  "name": "roots-oddoye",
-  "description": "oddoyedotcom",
+  "name": "oddoye.com",
+  "version": "2.0.0",
+  "description": "Website for David Oddoye",
+  "main": "index.js",
   "dependencies": {
-    "coffee-script": "1.9.x",
-    "jade": "1.9.x",
-    "marked": "0.3.x",
-    "roots": "3.0.x",
-    "roots-contentful": "0.0.7",
-    "rupture": "0.6.x",
-    "ship": "0.2.x"
-  }
+    "dotenv": "5.0.0",
+    "isomorphic-unfetch": "2.0.0",
+    "marked": "0.3.12",
+    "next": "5.0.0",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oddoye-david/oddoye.com.git"
+  },
+  "author": "David Oddoye <oddoyedvaid@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oddoye-david/oddoye.com/issues"
+  },
+  "homepage": "https://github.com/oddoye-david/oddoye.com#readme"
 }

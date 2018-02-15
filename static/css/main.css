@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Fredo';
-  src: url("fonts/fredo-regular-webfont.woff2") format("woff2"), url("fonts/fredo-regular-webfont.woff") format("woff");
+  src: url("/static/fonts/fredo-regular-webfont.woff2") format("woff2"), url("/static/fonts/fredo-regular-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal
 }
@@ -15,13 +15,15 @@ html {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   overflow-y: scroll;
-  box-sizing: border-box
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   padding: 0;
   margin: 0
 }
@@ -34,13 +36,13 @@ svg:not(:root) {
   overflow: hidden
 }
 
- ::-moz-selection,
- ::-moz-selection {
+::-moz-selection,
+::-moz-selection {
   background: #111
 }
 
- ::-moz-selection,
- ::selection {
+::-moz-selection,
+::selection {
   background: #111
 }
 
@@ -64,12 +66,16 @@ a:not(.btn) {
 
 p>a {
   background-image: -webkit-linear-gradient(transparent, transparent 93.75%, #111 93.75%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(93.75%, transparent), color-stop(93.75%, #111));
+  background-image: -o-linear-gradient(transparent, transparent 93.75%, #111 93.75%);
   background-image: linear-gradient(transparent, transparent 93.75%, #111 93.75%)
 }
 
 a:not(.btn):hover,
 a:not(.btn):focus {
   background-image: -webkit-linear-gradient(transparent, transparent 87.5%, #111 87.5%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(87.5%, transparent), color-stop(87.5%, #111));
+  background-image: -o-linear-gradient(transparent, transparent 87.5%, #111 87.5%);
   background-image: linear-gradient(transparent, transparent 87.5%, #111 87.5%)
 }
 
